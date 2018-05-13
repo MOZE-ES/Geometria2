@@ -7,6 +7,11 @@ public class Circulo_MO extends FiguraGeometrica_MO {
 	public Circulo_MO(double r, String tipoFigura) {
 		super(tipoFigura);
 		radio = r;
+		if(radio<0)
+		{
+			radio = radio*-1;
+		}
+		
 	}
 
 	@Override
